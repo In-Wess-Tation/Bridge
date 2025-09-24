@@ -47,10 +47,10 @@ namespace Bridge___Tester
             Assert.ThrowsException<ArgumentException>(() =>
             {
                 //arrange
-                Car c3 = new Car();
-                c3.LicensePlate = "12345678";
+                MC mc3 = new MC();
+                mc3.LicensePlate = "12345678";
                 //act
-                var result = c3.LicensePlateCheck(c3.LicensePlate);
+                var result = mc3.LicensePlateCheck(mc3.LicensePlate);
             });
         }
 
