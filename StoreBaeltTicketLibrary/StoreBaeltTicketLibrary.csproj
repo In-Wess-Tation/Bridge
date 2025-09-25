@@ -10,4 +10,8 @@
     <Folder Include="extern dll\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Bridge\Bridge.csproj" />
+  </ItemGroup>
+
 </Project>
