@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bridge</name>
+    </assembly>
+    <members>
+        <member name="T:Bridge.Car">
+            <summary>
+            Represents a car vehicle with specific toll pricing and discount methods.
+            </summary>
+        </member>
+        <member name="M:Bridge.Car.Price">
+            <summary>
+            Returns the price of the car toll.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bridge.Car.VehicleType">
+            <summary>
+            Returns the type of vehicle, which is "Car".
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bridge.Car.BroBizzDiscount(System.Boolean)">
+            <summary>
+            Calculates the BroBizz discount for the car.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bridge.Car.WeekendDiscount(System.DateTime)">
+            <summary>
+            Calculates the weekend discount for the car.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bridge.Car.WeekendDiscountBroBizz(System.Boolean,System.DateTime)">
+            <summary>
+            Calculates the combined weekend and BroBizz discount for the car.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Bridge.MC">
+            <summary>
+            Represents a motorcycle vehicle with specific toll pricing and discount methods.
+            </summary>
+        </member>
+        <member name="M:Bridge.MC.Price">
+            <summary>
+            Returns the price of the motorcycle toll.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bridge.MC.VehicleType">
+            <summary>
+            Returns the type of vehicle, which is "MC".
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bridge.MC.BroBizzDiscount(System.Boolean)">
+            <summary>
+            Calculates the BroBizz discount for the motorcycle.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Bridge.Vehicle">
+            <summary>
+            Abstract base class representing a vehicle with common properties and methods.
+            </summary>
+        </member>
+        <member name="P:Bridge.Vehicle.LicensePlate">
+            <summary>
+            The license plate of the vehicle, limited to a maximum of 7 characters.
+            </summary>
+        </member>
+        <member name="P:Bridge.Vehicle.Date">
+            <summary>
+            The date of the vehicle's passage, used for calculating date-based discounts.
+            </summary>
+        </member>
+        <member name="P:Bridge.Vehicle.BroBizz">
+            <summary>
+            Indicates whether the vehicle has a BroBizz device for discounts.
+            </summary>
+        </member>
+        <member name="M:Bridge.Vehicle.Price">
+            <summary>
+            Returns the price of the vehicle toll.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bridge.Vehicle.VehicleType">
+            <summary>
+            Returns the type of vehicle.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bridge.Vehicle.LicensePlateCheck(System.String)">
+            <summary>
+            Checks if the license plate is valid (not longer than 7 characters).
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Bridge.Vehicle.BroBizzDiscount(System.Boolean)">
+            <summary>
+            Calculates the BroBizz discount for the vehicle.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
