@@ -4,10 +4,15 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Bridge\Bridge.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="extern dll\" />
   </ItemGroup>
 
 </Project>
